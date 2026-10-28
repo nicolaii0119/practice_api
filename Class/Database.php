@@ -2,7 +2,7 @@
     class Database{
         protected $conn;
         public function __construct(){
-            if (file_exist(__DIR__ . "/../.env")){
+            if (file_exists(__DIR__ . "/../.env")){
                 $_ENV =parse_ini_file(__DIR__ . "/../.env");
             }else{
                 $_ENV =$_ENV ?: getenv();

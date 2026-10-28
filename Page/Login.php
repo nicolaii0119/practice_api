@@ -20,7 +20,7 @@
         ];
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://localhost/Loginactivity/Request/User.php");
+        curl_setopt($ch, CURLOPT_URL, "https://practice-api-haux.onrender.com/Request/User.php");
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -42,7 +42,7 @@
             if (isset($result['message'])) {
                 $message = $result['message'];
             } else {
-                $message = 'May problema sa koneksyon sa server.';
+                $message = 'Invalid server connection.';
             }
 
             echo "<script>

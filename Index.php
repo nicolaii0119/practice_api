@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In - App Dev</title>
-    <?php include_once('Components/Includes.php'); ?>
+    <?php include_once('Page/Components/Includes.php'); ?>
 </head>
 <body>
     <?php
